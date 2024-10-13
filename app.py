@@ -24,7 +24,7 @@ PROGRAMS = [
   {
   'id':4,
   'title':'General Business',
-  'years':'4 years',
+  'years':'3.5 years',
   'location':'remote'
   }
 ]
