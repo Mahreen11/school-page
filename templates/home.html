@@ -15,15 +15,19 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">Medford School</h1>
+    <h1 class="text-center mt-2 mb-4">{{university_name}}</h1>
     <img class="img-fluid" id="banner" src="https://bd29bed2-464f-4db6-9eca-649f71d88f01-00-31urcbv9qu776.picard.replit.dev/static/Banner.jpg">
-    <h2 class="text-center mt-2 mb-4">About Medford School</h2>
+    <h2 class="text-center mt-2 mb-4">About Medford</h2>
     <p class="lead">Lorem ipsum odor amet, consectetuer adipiscing elit. Ultrices vitae lacus sagittis consequat faucibus; consequat pretium leo. Nisl fermentum accumsan eget posuere conubia id sapien nulla condimentum. In convallis ridiculus elit; massa ipsum mi purus bibendum. Volutpat luctus orci nibh mauris viverra hac, aliquet litora. Nulla nunc maecenas erat cursus congue placerat consectetur class.</p>
 <p class="lead">
   Lorem ipsum odor amet, consectetuer adipiscing elit. Ultrices vitae lacus sagittis consequat faucibus; consequat pretium leo. Nisl fermentum accumsan eget posuere conubia id sapien nulla condimentum. In convallis ridiculus elit; massa ipsum mi purus bibendum. Volutpat luctus orci nibh mauris viverra hac, aliquet litora. Nulla nunc maecenas erat cursus congue placerat consectetur class.
 </p> 
     <h2 class="text-center mt-2 mb-4"">School Programs</h2>
-    <p>Show the programs here</p>
+      <div>
+      {% for program in programs %}
+       {% include 'programitem.html' %}
+      {% endfor %}
+        </div>
       <div class="text-center">
     <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2024,Medford</p>
